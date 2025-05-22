@@ -9,9 +9,16 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Service that implements the methods from ProductService interface
+ */
 @Service
 public class ProductServiceImpl implements ProductService {
 
+    /**
+     * method that returns the products
+     * @return list of products
+     */
     @Override
     public List<ProductListDTO> getProducts() {
         return Database.products
@@ -26,6 +33,11 @@ public class ProductServiceImpl implements ProductService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * method that returns the detail of the product
+     * @param id id of the product
+     * @return the detail of the product
+     */
     @Override
     public Product getProductDetail(Long id) {
         return Database.products

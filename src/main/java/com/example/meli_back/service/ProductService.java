@@ -5,6 +5,9 @@ import com.example.meli_back.model.ProductListDTO;
 
 import java.util.List;
 
+/**
+ * interface that exposes the signature methods
+ */
 public interface ProductService {
 
     List<ProductListDTO> getProducts();

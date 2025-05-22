@@ -3,6 +3,9 @@ package com.example.meli_back.model.entity;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * entity for seller
+ */
 @Data
 @Builder
 public class Seller {

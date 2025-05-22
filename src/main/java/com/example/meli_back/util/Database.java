@@ -5,6 +5,9 @@ import com.example.meli_back.model.entity.Seller;
 
 import java.util.List;
 
+/**
+ * class that contains the static data for the application
+ */
 public class Database {
 
     public static List<Product> products;

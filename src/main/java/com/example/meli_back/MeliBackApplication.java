@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * class that contains the main method of the app
+ */
 @SpringBootApplication
 public class MeliBackApplication {
 
@@ -13,6 +16,10 @@ public class MeliBackApplication {
 		SpringApplication.run(MeliBackApplication.class, args);
 	}
 
+	/**
+	 * method that creates a bean to enable the origins from localhost:3000 (where the frontend is running)
+	 * @return WebMvcConfigurer with the addCorsMappings method overridden
+	 */
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
